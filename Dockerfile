@@ -11,7 +11,6 @@ RUN apt-get update && apt-get install -y runit locales vim.tiny build-essential 
   && cd /usr/src/dumb-init \
   && make \
   && mv /usr/src/dumb-init/dumb-init /sbin/ \
-  && mkdir /etc/service \
   && cd / \
   && rm -rf /usr/src/dumb-init \
   && apt-get remove -y build-essential \
